@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.soulstice.datetimedemo.MainActivity" >
+
+    <Button
+        android:id="@+id/startDateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="DATE" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Select START DATE and TIME"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="166dp"
+        android:text="Select END DATE and TIME"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/endDateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="24dp"
+        android:text="DATE" />
+
+    <Button
+        android:id="@+id/endTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/endDateBtn"
+        android:layout_alignBottom="@+id/endDateBtn"
+        android:layout_alignLeft="@+id/startTimeBtn"
+        android:text="TIME" />
+
+    <TextView
+        android:id="@+id/endDateAndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/startDateAndTime"
+        android:layout_below="@+id/endDateBtn"
+        android:layout_marginTop="41dp"
+        android:text="End DateTime is:" />
+
+    <Button
+        android:id="@+id/startTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startDateBtn"
+        android:layout_alignBottom="@+id/startDateBtn"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/startDateAndTime"
+        android:text="TIME" />
+
+    <TextView
+        android:id="@+id/startDateAndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/startDateBtn"
+        android:layout_marginTop="20dp"
+        android:text="Start DateTime is:" />
+
+</RelativeLayout>
